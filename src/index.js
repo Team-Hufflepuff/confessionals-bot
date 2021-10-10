@@ -183,12 +183,12 @@ class Bot extends Client {
 
 			this.log.info('Connecting to Discord API...');
 			
-			const http = require('http');
-			const server = http.createServer((req, res) => {
-			  res.writeHead(200, {"Content-Type" : "text/plain"});
-			  res.end('200 OK');
-			});
-			server.listen(8080);
+			// const http = require('http');
+			// const server = http.createServer((req, res) => {
+			//   res.writeHead(200, {"Content-Type" : "text/plain"});
+			//   res.end('200 OK');
+			// });
+			// server.listen(8080);
 
 			this.login();
 		})();
