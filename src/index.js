@@ -186,7 +186,7 @@ class Bot extends Client {
 			  res.writeHead(200, {"Content-Type" : "text/plain"});
 			  res.end('200 OK');
 			});
-			server.listen(80);
+			server.listen(8080);
 
 			this.login();
 		})();
