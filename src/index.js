@@ -57,6 +57,8 @@ if (!checkFile('./.env', './example.env')) {
 		.randomBytes(24)
 		.toString('hex');
 
+	console.log(`${key}${value}`);
+
 	let data = fs.readFileSync(file, { encoding: 'utf-8' });
 	data = data.replace(key, key + value);
 
