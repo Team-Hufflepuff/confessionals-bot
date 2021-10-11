@@ -49,7 +49,7 @@ module.exports = async client => {
 		client.log.warn('Message logging is disabled due to insufficient database');
 	} else {
 		client.log.info(`Connecting to ${types[type].name} database...`);
-		sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
+		sequelize = new Sequelize(process.env.JAWSDB_URL, {
 			dialect: types[type].dialect,
 			host: DB_HOST,
 			logging: text => client.log.debug(text),
