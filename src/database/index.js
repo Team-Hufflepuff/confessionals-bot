@@ -13,6 +13,12 @@ module.exports = async client => {
 		DB_PASS,
 		DB_NAME
 	} = process.env;
+	client.log.info(`DB_TYPE=${DB_TYPE}`);
+	client.log.info(`DB_HOST=${DB_HOST}`);
+	client.log.info(`DB_PORT=${DB_PORT}`);
+	client.log.info(`DB_USER=${DB_USER}`);
+	client.log.info(`DB_PASS=${DB_PASS}`);
+	client.log.info(`DB_NAME=${DB_NAME}`);
 
 	const type = (DB_TYPE || 'sqlite').toLowerCase();
 
