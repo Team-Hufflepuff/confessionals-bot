@@ -157,7 +157,7 @@ class Bot extends Client {
 			this.i18n = new I18n('en-GB', locales);
 
 			/** A sequelize instance */
-			this.db = await require('./database')(this), // this.db.models.Ticket...
+			this.db = await require('./database')(this); // this.db.models.Ticket...
 
 			this.setMaxListeners(this.config.max_listeners); // set the max listeners for each event
 
@@ -180,13 +180,6 @@ class Bot extends Client {
 			this.utils = new DiscordUtils(this);
 
 			this.log.info('Connecting to Discord API...');
-			
-			// const http = require('http');
-			// const server = http.createServer((req, res) => {
-			//   res.writeHead(200, {"Content-Type" : "text/plain"});
-			//   res.end('200 OK');
-			// });
-			// server.listen(8080);
 
 			this.login();
 		})();
