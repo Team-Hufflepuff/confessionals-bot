@@ -53,7 +53,8 @@ module.exports = async client => {
 			dialect: types[type].dialect,
 			host: DB_HOST,
 			logging: text => client.log.debug(text),
-			port: DB_PORT
+			port: DB_PORT,
+			ssl: true
 		});
 	}
 
