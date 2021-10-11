@@ -54,7 +54,7 @@ module.exports = async client => {
 			host: DB_HOST,
 			logging: text => client.log.debug(text),
 			port: DB_PORT,
-			ssl: true
+			native: true
 		});
 	}
 
