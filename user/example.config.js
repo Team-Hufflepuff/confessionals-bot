@@ -24,6 +24,11 @@ module.exports = {
 		name_format: 'ticket-{number}',
 		opening_message: 'Hello {name}, thank you for creating a ticket. A member of staff will soon be available to assist you.\n\n__All messages in this channel are stored for future reference.__'
 	},
+	'dsctickets.text-transcripts': {
+        channels: {
+            '<GUILD ID>': '<TEXT CHANNEL ID'
+        }
+    	},
 	developer: { debug: false },
 	locale: 'en-GB',
 	logs: {
@@ -32,7 +37,9 @@ module.exports = {
 		split: true
 	},
 	max_listeners: 10,
-	plugins: [],
+	plugins: [
+    'dsctickets.text-transcripts'
+	],
 	presence: {
 		duration: 60,
 		presences: [
