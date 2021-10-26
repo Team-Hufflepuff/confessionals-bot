@@ -26,7 +26,7 @@ module.exports = {
 	},
 	'dsctickets.text-transcripts': {
         channels: {
-            '<GUILD ID>': '<TEXT CHANNEL ID'
+            '895395828649312296': '895405497333715004'
         }
     	},
 	developer: { debug: false },
@@ -38,7 +38,7 @@ module.exports = {
 	},
 	max_listeners: 10,
 	plugins: [
-    'dsctickets.text-transcripts'
+    	'dsctickets.text-transcripts'
 	],
 	presence: {
 		duration: 60,
