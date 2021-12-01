@@ -20,9 +20,9 @@
 module.exports = {
 	defaults: {
 		colour: '#009999',
-		log_messages: true,
+		log_messages: false,
 		name_format: 'ticket-{number}',
-		opening_message: 'Hello {name}, thank you for creating a ticket. A member of staff will soon be available to assist you.\n\n__All messages in this channel are stored for future reference.__'
+		opening_message: 'Hello {name}, thank you for creating a ticket. A member of staff will soon be available to assist you.\n\n__We will archive all messages in this channel at the end of the game.__'
 	},
 	'dsctickets.text-transcripts': {
         channels: {
@@ -32,7 +32,7 @@ module.exports = {
 	developer: { debug: false },
 	locale: 'en-GB',
 	logs: {
-		enabled: true,
+		enabled: false,
 		keep_for: 30,
 		split: true
 	},
