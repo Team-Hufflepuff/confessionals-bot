@@ -30,7 +30,7 @@ module.exports = {
         }
     	},
 	developer: { debug: false },
-	locale: 'en-GB',
+	locale: 'en-US',
 	logs: {
 		enabled: false,
 		keep_for: 30,
